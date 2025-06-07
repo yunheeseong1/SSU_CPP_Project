@@ -1,0 +1,1816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarWidget</class>
+ <widget class="QWidget" name="CalendarWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1402</width>
+    <height>836</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_month">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>10</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>바탕</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_prev">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>이전달</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>1341</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" rowstretch="2,1,5,1,5,1,5,1,5,1,5,1,5">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="10" column="3">
+     <widget class="QPushButton" name="btn_5_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="QLabel" name="lbl_4_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLabel" name="lbl_1_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="2">
+     <widget class="QLabel" name="lbl_6_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="4">
+     <widget class="QPushButton" name="btn_4_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5">
+     <widget class="QLabel" name="lbl_5_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btn_1_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lbl_4_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QPushButton" name="btn_5_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="QLabel" name="lbl_3_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QLabel" name="lbl_4_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="lbl_2_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="4">
+     <widget class="QPushButton" name="btn_5_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="5">
+     <widget class="QLabel" name="lbl_6_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="lbl_2_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QLabel" name="lbl_4_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="lbl_2_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QPushButton" name="btn_3_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="5">
+     <widget class="QPushButton" name="btn_5_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QPushButton" name="btn_4_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lbl_5_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="lbl_3_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="btn_1_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="lbl_1_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="btn_3_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="btn_1_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLabel" name="lbl_6_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="QPushButton" name="btn_2_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="lbl_3_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lbl_0_0">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>월</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="btn_5_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="6">
+     <widget class="QPushButton" name="btn_3_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="2">
+     <widget class="QPushButton" name="btn_5_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btn_1_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="6">
+     <widget class="QPushButton" name="btn_5_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="lbl_1_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="3">
+     <widget class="QLabel" name="lbl_5_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLabel" name="lbl_1_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="3">
+     <widget class="QLabel" name="lbl_6_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="lbl_2_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="btn_2_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="btn_2_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="lbl_0_1">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>화</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="btn_2_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QPushButton" name="btn_2_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="btn_3_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="btn_4_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lbl_1_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="6">
+     <widget class="QLabel" name="lbl_6_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLabel" name="lbl_4_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="lbl_0_2">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>수</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="lbl_0_5">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+	color: red; /* 글자색을 빨간색으로 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>토</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLabel" name="lbl_0_6">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+	color: red; /* 글자색을 빨간색으로 */
+}</string>
+      </property>
+      <property name="text">
+       <string>일</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLabel" name="lbl_2_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="4">
+     <widget class="QLabel" name="lbl_5_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLabel" name="lbl_4_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="btn_4_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QPushButton" name="btn_2_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="btn_3_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QLabel" name="lbl_5_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lbl_2_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLabel" name="lbl_3_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLabel" name="lbl_5_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLabel" name="lbl_3_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btn_1_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="6">
+     <widget class="QPushButton" name="btn_4_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLabel" name="lbl_3_5">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLabel" name="lbl_4_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="btn_3_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="lbl_1_1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QPushButton" name="btn_3_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lbl_3_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="btn_2_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="lbl_0_4">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>금</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QLabel" name="lbl_2_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="lbl_0_3">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    border-bottom: 1px solid black; /* 아래쪽에 1px 두께의 검은색 실선 */
+    padding-bottom: 2px; /* 선과 텍스트 사이의 간격 (선택 사항) */
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>목</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="6">
+     <widget class="QLabel" name="lbl_5_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::FocusPolicy::StrongFocus</enum>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="lbl_6_0">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btn_1_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="btn_1_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px; /* 왼쪽에 1px 추가 */
+    border-color: black black black lightgray; /* 위, 오른쪽, 아래, 왼쪽 */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="5">
+     <widget class="QPushButton" name="btn_4_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="4">
+     <widget class="QLabel" name="lbl_6_4">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="lbl_1_3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="btn_4_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 1px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QPushButton" name="btn_6_0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QPushButton" name="btn_6_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="2">
+     <widget class="QPushButton" name="btn_6_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="3">
+     <widget class="QPushButton" name="btn_6_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="4">
+     <widget class="QPushButton" name="btn_6_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="5">
+     <widget class="QPushButton" name="btn_6_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="6">
+     <widget class="QPushButton" name="btn_6_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border-style: solid; /* 다른 테두리 스타일 (solid, dashed, dotted 등) */
+    border-width: 0px 0px 0px 0px; /* 위, 오른쪽, 아래, 왼쪽 순서로 두께 지정 */
+    border-color: black; /* 테두리 색상 */
+    /* 필요하다면 다른 속성들 추가 (예: padding, margin 등) */
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_next">
+   <property name="geometry">
+    <rect>
+     <x>1220</x>
+     <y>30</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>다음달</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
